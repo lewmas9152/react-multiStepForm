@@ -1,0 +1,158 @@
+
+
+body{
+    background-color: var(--Magnolia);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    background-color: var(--Light-blue);
+    color: grey;
+    font: inherit;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    min-height: 65vh;
+    width: 100vw;
+    min-width: 375px;
+    max-width: 1440px;
+
+
+}
+
+h1 {
+    color: var(--Marine-blue);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.nav_elements {
+    display: flex;
+    justify-content: center;
+    background-image: url(/public/assets/images/bg-sidebar-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 10rem;
+    gap: 1rem;
+    
+    
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 2rem 0;
+    font: inherit;
+    width: 0.5px;
+    height: 0.5px;
+    border: 1px solid var(--White);
+    border-radius: 100%;
+    
+  }
+
+.navLabel {
+    display: none;
+
+}
+
+.entry {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.entry_element {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    color: var(--Marine-blue);
+}
+
+input {
+    border: solid   var(--Cool-gray);
+    border-width: 0.1px;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    
+}
+
+
+@media screen  and (min-width:650px){
+
+    body {
+        background-color: var(--Light-blue);
+        margin: 5rem;
+        
+    }
+    .container {
+        display: flex;
+        background-color: var(--White);
+        width: unset;
+        padding: 1rem;
+        max-height: 80vh;
+        gap: 5rem;
+        border-radius: 1rem;
+    }
+
+    .nav_elements {
+        background-image: url(/public/assets/images/bg-sidebar-desktop.svg);
+        flex-direction: column;
+        width: 20vw;
+        min-height: 70vh;
+
+        border-radius: 1rem;
+        gap: 0;
+        color: var(--White);
+        justify-content: unset;
+        padding-top: 1rem;
+        line-height: 5px;
+        
+    }
+
+
+    input[type = "radio"] {
+        margin: 1rem ;
+    }
+
+    .navLabel {
+        display: unset;
+    }
+
+    .radio {
+        display: flex;
+        gap: 0.1rem;
+        align-items: center;  
+        
+    }
+
+    .steps {
+        color: var(--Cool-gray);
+    }
+
+    .desc {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+
+    .card {
+        position: unset;
+        min-width: 55ch;
+        /* min-height: 80vh; */
+        
+    }
+
+   .label {
+    align-self: flex-start;
+   }
+
+}
