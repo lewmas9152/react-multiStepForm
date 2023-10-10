@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start":"react-scripts start",
     "predeloy": "npm run build ",
     "deploy": "gh-pages -d build",
     "build": "vite build",
