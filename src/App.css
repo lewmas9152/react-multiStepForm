@@ -115,6 +115,8 @@ input[type="radio"] {
     color: var(--White);
     cursor: pointer;
     height: 2rem;
+    font-size: 15px;
+    max-width: 8rem;
 }
 
 .nav_btn:hover {
@@ -141,11 +143,12 @@ input[type="radio"] {
 
     .nav_btn {
         
-        bottom: 6rem;
+        bottom: 9rem;
         right: 19rem;   
     }
 
     .back {
         left: 40rem;
+        
     }
 }

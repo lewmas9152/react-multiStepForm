@@ -1,0 +1,61 @@
+.plansD {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  
+}
+
+.button {
+  gap: 1rem;
+  padding-top: 1.5rem;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+}
+
+.button :nth-child(3) {
+  align-self: flex-end;
+  margin-left: 0;
+}
+
+.extraPay {
+  color: var(--Purplish-blue);
+  align-self: flex-end;
+}
+
+.descD {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  text-align: start;
+  align-items: center;
+  line-height: 0rem;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid;
+  align-self: flex-start;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #00f;
+  border-color: #00f;
+}
+
+@media screen and (min-width: 650px) {
+  .plansD {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .button {
+    flex-direction: row;
+    width: unset;
+    height: unset;
+    margin-top: unset;
+    margin-bottom: unset;
+  }
+}

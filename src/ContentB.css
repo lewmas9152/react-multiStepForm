@@ -17,11 +17,16 @@ button {
   border: solid 1px var(--Purplish-blue);
   background-color: var(--Alabaster);
 
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 button:hover {
-  background-color: var(--Light-gray);
+  background-color: var(--Magnolia);
+}
+
+button p {
+  color: var(--Cool-gray);
+  font-size: 15px;
 }
 
 .desc {
@@ -98,7 +103,7 @@ label {
 
 .time {
   display: flex;
-  background-color: var(--Light-gray);
+  background-color: var(--Magnolia);
   justify-content: center;
   margin-top: 1rem;
   height: 3rem;
@@ -128,6 +133,7 @@ label {
     margin-top: 2rem;
     margin-bottom: 1rem;
     justify-content: space-between;
+    
 
   }
 
@@ -137,5 +143,7 @@ label {
   text-transform: lowercase;
   text-align: start;
 }
+
+
 
 }

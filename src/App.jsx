@@ -1,7 +1,8 @@
 import { useState } from "react";
 import ContentA from "./ContentA";
-import ContentB from "./ContentB";
 import ContentC from "./ContentC";
+import ContentD from "./ContentD";
+import ContentB from "./ContentB";
 import "./App.css";
 
 function App() {
@@ -9,9 +10,10 @@ function App() {
 
   return (
     <>
-      {/* <ContentA/> */}
+      <ContentA/>
       {/* <ContentB/> */}
-      <ContentC />
+      {/* <ContentC /> */}
+      {/* <ContentD/> */}
 
       <button className="nav_btn">Next Step</button>
       <button className="nav_btn back">Go Back</button>
