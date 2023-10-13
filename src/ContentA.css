@@ -75,6 +75,7 @@ input[type="radio"] {
 
 .label {
     color: var(--Marine-blue);
+    justify-content: unset;
 }
 
 input {

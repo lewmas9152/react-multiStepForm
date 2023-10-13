@@ -1,0 +1,45 @@
+.card {
+    color: var(--Cool-gray);
+}
+
+
+.selections {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);  
+    background-color: var(Light-blue);
+   
+        
+}
+
+.selections :nth-child(3) {
+    grid-column: span 2;
+    border: solid 1px var(--Cool-gray);
+    margin-bottom: 1rem;
+}
+
+.priceChoice {
+    color: var(--Marine-blue);
+    font-weight: 700;
+}
+
+.change {
+    color: var(--Cool-gray);
+    text-decoration: underline;
+}
+
+.change:hover {
+    color: var(--Strawberry-red);
+}
+
+.extraPay {
+    color: var(--Marine-blue);
+}
+
+.Total {
+    color: var(--Purplish-blue);
+    font-weight: 700;
+}
+
+.pay {
+    justify-self: end;
+}

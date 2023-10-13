@@ -14,7 +14,7 @@ const ContentC = () => {
    
         <div className="plans">
         <button>
-            <img src="/public/assets/images/icon-arcade.svg" alt="icon-arcade" />
+            <img src="/assets/images/icon-arcade.svg" alt="icon-arcade" />
            <div className="desc">
            <p  className='label'>Arcade</p>
             <p className='rate'>$90/yr</p>
@@ -24,7 +24,7 @@ const ContentC = () => {
         </button>
 
         <button>
-            <img src="/public/assets/images/icon-advanced.svg" alt="icon-advanced" />
+            <img src="/assets/images/icon-advanced.svg" alt="icon-advanced" />
            <div className="desc">
            <p className='label'>Advanced</p>
             <p className='rate'>$120/yr</p>
@@ -34,7 +34,7 @@ const ContentC = () => {
         </button>
 
         <button>
-            <img src="/public/assets/images/icon-pro.svg" alt="icon-pro" />
+            <img src="/assets/images/icon-pro.svg" alt="icon-pro" />
           <div className="desc">
           <p  className='label'>Pro</p>
             <p className='rate'>$150/yr</p>

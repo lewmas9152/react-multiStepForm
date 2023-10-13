@@ -45,6 +45,8 @@ input[type="checkbox"]:checked {
   border-color: #00f;
 }
 
+
+
 @media screen and (min-width: 650px) {
   .plansD {
     flex-direction: column;
@@ -57,5 +59,9 @@ input[type="checkbox"]:checked {
     height: unset;
     margin-top: unset;
     margin-bottom: unset;
+  }
+
+  .nav_btn {
+    bottom: 8rem;
   }
 }

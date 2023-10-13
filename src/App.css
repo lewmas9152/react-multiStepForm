@@ -1,154 +1,138 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
-*, ::before,::after {
-    box-sizing: border-box;
-    margin: 0;
-    
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
 }
-
 
 :root {
-     /* Primary */
+  /* Primary */
 
---Marine-blue: hsl(213, 96%, 18%);
---Purplish-blue: hsl(243, 100%, 62%);
---Pastel-blue: hsl(228, 100%, 84%);
---Light-blue: hsla(206, 94%, 87%,0.4);
---Strawberry-red: hsl(354, 84%, 57%);
+  --Marine-blue: hsl(213, 96%, 18%);
+  --Purplish-blue: hsl(243, 100%, 62%);
+  --Purplish-blue-price: hsla(243, 100%, 62%, 0.3);
+  --Pastel-blue: hsl(228, 100%, 84%);
+  --Light-blue: hsla(206, 94%, 87%, 0.4);
+  --Strawberry-red: hsl(354, 84%, 57%);
 
- /* Neutral */
+  /* Neutral */
 
---Cool-gray: hsl(231, 11%, 63%);
---Light-gray: hsl(229, 24%, 87%);
---Magnolia: hsl(217, 100%, 97%);
---Alabaster: hsl(231, 100%, 99%);
---White: hsl(0, 0%, 100%);
+  --Cool-gray: hsl(231, 11%, 63%);
+  --Light-gray: hsl(229, 24%, 87%);
+  --Magnolia: hsl(217, 100%, 97%);
+  --Alabaster: hsl(231, 100%, 99%);
+  --White: hsl(0, 0%, 100%);
 }
 
-body{
-    background-color: var(--Magnolia);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
+body {
+  background-color: var(--Magnolia);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
 }
-
 
 .container {
-    background-color: var(--Light-blue);
-    color: grey;
-    font: inherit;
-    font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    /* min-height: 95vh; */
-    width: 100vw;
-    min-width: 375px;
-    max-width: 1440px;
-
-
+  background-color: var(--Light-blue);
+  color: grey;
+  font: inherit;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  /* min-height: 95vh; */
+  width: 100vw;
+  min-width: 375px;
+  max-width: 1440px;
 }
 
 h1 {
-    color: var(--Marine-blue);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  color: var(--Marine-blue);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 p {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .nav_elements {
-    display: flex;
-    justify-content: center;
-    background-image: url(/public/assets/images/bg-sidebar-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 10rem;
-    gap: 1rem;
-    
-    
+  display: flex;
+  justify-content: center;
+  background-image: url(/public/assets/images/bg-sidebar-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 10rem;
+  gap: 1rem;
 }
 
 input[type="radio"] {
-    -webkit-appearance: none;
-    appearance: none;
-    margin: 2rem 0;
-    font: inherit;
-    width: 0.5px;
-    height: 0.5px;
-    border: 1px solid var(--White);
-    border-radius: 100%;
-    
-  }
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 2rem 0;
+  font: inherit;
+  width: 0.5px;
+  height: 0.5px;
+  border: 1px solid var(--White);
+  border-radius: 100%;
+}
 
 .navLabel {
-    display: none;
-
+  display: none;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    position: absolute;
-    top: 5.2rem;
-    align-self: center;
-    align-self: flex-start;
-    background-color: var(--Alabaster);
-    
-    
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 5.2rem;
+  align-self: center;
+  align-self: flex-start;
+  background-color: var(--Alabaster);
 }
 
-
 .nav_btn {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    padding: 0.6rem 1.5rem;
-    background-color: var(--Marine-blue);
-    border: 0;
-    border-radius: 0.2rem;
-    color: var(--White);
-    cursor: pointer;
-    height: 2rem;
-    font-size: 15px;
-    max-width: 8rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.6rem 1.5rem;
+  background-color: var(--Marine-blue);
+  border: 0;
+  border-radius: 0.2rem;
+  color: var(--White);
+  cursor: pointer;
+  height: 2rem;
+  font-size: 15px;
+  max-width: 8rem;
 }
 
 .nav_btn:hover {
-    background-color: blue;
-
+  background-color: blue;
 }
 
 .back {
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    background-color: var(--White);
-    color: var(--Cool-gray);
-
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: var(--White);
+  color: var(--Cool-gray);
 }
 
-@media screen  and (min-width:650px){
+@media screen and (min-width: 650px) {
+  .container {
+    min-height: 60vh;
+    max-width: 1440px;
+  }
 
-   
-    .container {
-        min-height: 60vh;
-        max-width: 1440px;
-    }
+  .nav_btn {
+    bottom: 9rem;
+    right: 19rem;
+  }
 
-    .nav_btn {
-        
-        bottom: 9rem;
-        right: 19rem;   
-    }
-
-    .back {
-        left: 40rem;
-        
-    }
+  .back {
+    left: 40rem;
+  }
 }
