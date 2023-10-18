@@ -59,26 +59,82 @@ p {
 .nav_elements {
   display: flex;
   justify-content: center;
-  background-image: url(/public/assets/images/bg-sidebar-mobile.svg);
+  background-image: url(/assets/images/bg-sidebar-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 10rem;
   gap: 1rem;
 }
 
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
 input[type="radio"] {
+  /* Add if not using autoprefixer */
   -webkit-appearance: none;
   appearance: none;
-  margin: 2rem 0;
+  /* For iOS < 15 to remove gradient background */
+  background-color: transparent;
+  /* Not removed via appearance */
+  margin: 0;
   font: inherit;
-  width: 0.5px;
-  height: 0.5px;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
   border: 1px solid var(--White);
-  border-radius: 100%;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
 }
 
-.navLabel {
+input[type="radio"]::before {
+  /* content: ""; */
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  /* box-shadow: var(--Pastel-blue); */
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+/* When the radio button is checked, fill the whole button with color */
+input[type="radio"]:checked {
+  background-color: var(--Pastel-blue);
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+.form-control:focus-within {
+  color: var(--form-control-color);
+}
+
+/* .form-control {
+  margin-top: 1em;
+} */
+
+.nav_elements label {
+  margin-bottom: 3rem;
+}
+
+.label_nav {
   display: none;
+  cursor: pointer;
 }
 
 .card {
@@ -92,6 +148,24 @@ input[type="radio"] {
   align-self: center;
   align-self: flex-start;
   background-color: var(--Alabaster);
+}
+
+input {
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}
+
+.entry_element label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.required {
+  color: var(--Strawberry-red);
+  display: none;
 }
 
 .nav_btn {
@@ -127,12 +201,39 @@ input[type="radio"] {
     max-width: 1440px;
   }
 
+  .nav_elements label {
+    margin-bottom: unset;
+    display: flex;
+    justify-content: start;
+    margin-top: 1rem;
+  }
+
+  input[type="radio"] {
+    transform: translateY(-0.5rem);
+  }
+
+  span {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .nav_elements p {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .label_nav {
+    display: unset;
+  }
+
   .nav_btn {
-    bottom: 9rem;
-    right: 19rem;
+    bottom: 30rem;
+    right: 6rem;
   }
 
   .back {
-    left: 40rem;
+    left: 20rem;
+    bottom: 50rem;
   }
 }

@@ -13,22 +13,20 @@ const ContentA = () => {
         <div className="entry">
 
        <div className="entry_element">
-       <label htmlFor="Name" className='label'>Name</label>
-            <input type="text"  placeholder='e.g. Stephen King' id="Name"/>
+       <label htmlFor="Name" className='label'>Name <span className='required'>This fileld is required</span></label>
+            <input type="text"  placeholder='e.g. Stephen King' id="Name"  required/>
        </div>
 
            <div className="entry_element">
-           <label htmlFor="email" className='label'>Email Address</label>
-            <input type="text"  placeholder='e.g. Stephenking@lorem.com' id="email"/>
+           <label htmlFor="email" className='label'>Email Address <span className='required'>This fileld is required</span></label>
+            <input type="text"  placeholder='e.g. Stephenking@lorem.com' id="email" required/>
            </div>
 
            <div className="entry_element">
-           <label htmlFor="pnone" className='label'>Phone Number</label>
-            <input type="tel"  placeholder='e.g. +1234567890' id="phone"/>
+           <label htmlFor="pnone" className='label'>Phone Number <span className='required'>This fileld is required</span></label>
+            <input type="tel"  placeholder='e.g. +1234567890' id="phone" required/>
            </div>
         </div>
-       
-      
         </div>
         
        

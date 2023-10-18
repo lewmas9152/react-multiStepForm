@@ -1,46 +1,32 @@
-import React from 'react'
-import './App.css'
+import React from "react";
+import "./App.css";
 
 const Navigator = () => {
   return (
     <div>
-             <nav className='nav_elements'>
-          <div className='radio'> 
-            <input type="radio"  id="1" dataContent="1"/>
-           <label htmlFor="1" className='navLabel'>
-            <p className='steps'>Step 1</p>
-            <p className='desc'>Your info</p>
-           </label>
-           </div>
+      <nav className="nav_elements">
+        <label className="form_control">
+          <input type="radio" name="radio" value={1} />
+          <p className="label_nav">Step 1 <span>Your info</span></p>
+        </label>
 
-       <div className='radio'>
-       <input type="radio"  id="2"/>
-           <label htmlFor="2" className='navLabel' >
-            <p className='steps'>Step 2</p>
-            <p className='desc'>Select Plan</p>
-           </label>
-       </div>
+        <label className="form_control">
+          <input type="radio" name="radio" value={2} />
+          <p className="label_nav">Step 2 <span>Select plan</span></p>
+        </label>
 
-          <div className='radio'>
-          <input type="radio"  id="3"  />
-           <label htmlFor="3" className='navLabel'>
-            <p className='steps'>Step 3</p>
-            <p className='desc'>Adds-ons</p>
-           </label>
-          </div>
+        <label className="form_control">
+          <input type="radio" name="radio" value={3} />
+          <p className="label_nav">Step  <span>Add-ons</span></p>
+        </label>
 
-         <div className='radio'>
-         <input type="radio"  id="4"/>
-           <label htmlFor="4" className='navLabel'>
-            <p className='steps'>Step 4</p>
-            <p className='desc'>Summary</p>
-           </label>
-         </div>
-        </nav>  
-  
-
+        <label className="form_control">
+          <input type="radio" name="radio" value={4} />
+          <p className="label_nav">Step 4 <span>Summary</span></p>
+        </label>
+      </nav>
     </div>
-  )
-}
+  );
+};
 
-export default Navigator
+export default Navigator;

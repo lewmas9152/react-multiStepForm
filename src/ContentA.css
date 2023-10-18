@@ -33,34 +33,12 @@ p {
     margin-bottom: 1rem;
 }
 
-.nav_elements {
-    display: flex;
-    justify-content: center;
-    background-image: url(/public/assets/images/bg-sidebar-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 10rem;
-    gap: 1rem;
-    
-    
-}
 
-input[type="radio"] {
-    -webkit-appearance: none;
-    appearance: none;
-    margin: 2rem 0;
-    font: inherit;
-    width: 0.5px;
-    height: 0.5px;
-    border: 1px solid var(--White);
-    border-radius: 100%;
-    
-  }
 
-.navLabel {
+/* .navLabel {
     display: none;
 
-}
+} */
 
 .entry {
     display: flex;
