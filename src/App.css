@@ -56,6 +56,11 @@ p {
   margin-bottom: 1rem;
 }
 
+pre {
+  color: var(--White);
+  transform: translateX(-1.3rem);
+}
+
 .nav_elements {
   display: flex;
   justify-content: center;
@@ -196,6 +201,12 @@ label {
 }
 
 @media screen and (min-width: 650px) {
+
+
+  pre {
+    transform: translateX(-2.3rem);
+    padding-bottom: 1rem;
+  }
   .container {
     min-height: 60vh;
     max-width: 1440px;
@@ -229,11 +240,11 @@ label {
 
   .nav_btn {
     bottom: 30rem;
-    right: 6rem;
+    right:17rem;
   }
 
   .back {
-    left: 20rem;
+    left: 40rem;
     bottom: 50rem;
   }
 }
